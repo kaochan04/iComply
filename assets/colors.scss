@@ -1,0 +1,58 @@
+$green: #56b349;
+$orange: #e77b07;
+$red: #e33d43;
+$yellow: #f2b835;
+$blue: #0098cd;
+
+// Text Color
+.text-green {
+  color: $green !important;
+}
+.text-orange {
+  color: $orange !important;
+}
+.text-red {
+  color: $red !important;
+}
+.text-yellow {
+  color: $yellow !important;
+}
+.text-blue {
+  color: $blue !important;
+}
+// Background Color
+.bg-green {
+  background-color: $green !important;
+}
+.bg-orange {
+  background-color: $orange !important;
+}
+.bg-red {
+  background-color: $red !important;
+}
+.bg-yellow {
+  background-color: $yellow !important;
+}
+.bg-blue {
+  background-color: $blue !important;
+}
+.border-green {
+  border: 1px solid $green;
+  border-color: $green !important;
+}
+.border-orange {
+  border: 1px solid $orange;
+  border-color: $orange !important;
+}
+.border-red {
+  border: 1px solid $red;
+  border-color: $red !important;
+}
+.border-yellow {
+  border: 1px solid $yellow;
+  border-color: $yellow !important;
+}
+.border-blue {
+  border: 1px solid $blue;
+  border-color: $blue !important;
+}

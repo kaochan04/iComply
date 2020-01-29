@@ -1,0 +1,18 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/oidc-client/1.7.0/oidc-client.min.js"></script>
+<script>
+ var mgr = new Oidc.UserManager({response_mode:'query'});
+
+  mgr.signinRedirectCallback().then(function(user) {
+        window.history.replaceState({},
+            window.document.title,
+            window.location.origin);
+         window.location = getParameterByName('returnUrl') === null ? '/' : getParameterByName('returnUrl');
+
+    }, error => {
+        console.error(error);
+    });
+
+    function getParameterByName(name, url)
+    {
+      if (!url) url = window.location.href; name = name.replace(/[\[\]]/g, '\\$&'); var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'), results = regex.exec(url); if (!results) return null; if (!results[2]) return ''; return decodeURIComponent(results[2].replace(/\+/g, ' ')); }
+</script>
