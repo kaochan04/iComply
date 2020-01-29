@@ -19,7 +19,7 @@
     }
   }
 
-  configuration('default-local', '4.8.3');
+  configuration('default-production', '4.8.3');
 
   // Settings for Development "Norled"
   // window._env.authority = 'https://dev-identity.norled.no/';
